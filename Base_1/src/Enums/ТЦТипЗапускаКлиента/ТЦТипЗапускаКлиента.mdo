@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6edccc24-4c06-4e4a-b395-8cad7336618d">
+  <producedTypes>
+    <refType typeId="0156dcc0-75c0-49c5-8acc-cda4072caeae" valueTypeId="2c8c7677-4c63-451b-a08b-8fe19377c3b9"/>
+    <listType typeId="79a9d28f-be9e-496e-91f0-e17e0f792b7f" valueTypeId="6c199efd-ead7-4b9f-b427-b9f557bcb581"/>
+    <managerType typeId="274ec6d2-79d2-4aa9-b710-bbbed3c7b1b2" valueTypeId="21fda9b8-b719-4216-924b-d2f2b27068d8"/>
+  </producedTypes>
+  <name>ТЦТипЗапускаКлиента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип запуска клиента</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a82d1bad-c42c-4d6f-b1e0-3765201d490b">
+    <name>ПараметрыАгента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры Агента</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="10092e08-4dfc-47e8-a747-dc80a190942b">
+    <name>СобственныеПараметры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Собственные параметры</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

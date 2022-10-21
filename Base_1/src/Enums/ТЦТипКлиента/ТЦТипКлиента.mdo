@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9a638ed-6a28-46fc-a506-21d484aca684">
+  <producedTypes>
+    <refType typeId="49d93518-3177-4582-87d7-91b6b52eb0b2" valueTypeId="d047846b-b796-45ac-b78f-f14661d91cde"/>
+    <listType typeId="df48b217-166e-4967-8568-7d86e2c0006a" valueTypeId="73c78575-75f9-4a24-a436-8ab0adb52bef"/>
+    <managerType typeId="68572ff2-8a2b-4df6-b196-43e22053f754" valueTypeId="da6d2729-d12f-44de-a59d-f0498e978bab"/>
+  </producedTypes>
+  <name>ТЦТипКлиента</name>
+  <synonym>
+    <key>ru</key>
+    <value>ТЦТип клиента</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c37c506c-95da-4d38-9d72-88e4a8adc607">
+    <name>Тонкий1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тонкий (сервер 1С:Предприятия)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ef6df6da-c1f0-41df-8575-ff9c3ea7ef4d">
+    <name>ТонкийВеб</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тонкий (веб-сервер)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1a474a6b-37d2-4164-b5ee-630be2700864">
+    <name>Веб</name>
+    <synonym>
+      <key>ru</key>
+      <value>Веб-клиент</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bc3d5151-eb78-4ce7-b2d3-86e18f0eceb0">
+    <name>ТолстыйУправляемый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Толстый (управляемое приложение)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="08ae27bb-0a4a-406c-b227-4ba8f0458a03">
+    <name>ТолстыйОбычный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Толстый (обычное приложение)</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

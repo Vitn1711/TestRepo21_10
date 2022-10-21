@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="52fadaa1-e536-4804-883e-4008e9c9fcf6">
+  <name>ТЦЭкспорт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Экспорт</value>
+  </synonym>
+  <transparentPixel>
+    <x>11</x>
+    <y>2</y>
+  </transparentPixel>
+</mdclass:CommonPicture>

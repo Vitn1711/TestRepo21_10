@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f75ad76-1e4f-4a2c-b8c5-8bb4f2ff451d">
+  <producedTypes>
+    <objectType typeId="c8c3175f-2643-4f30-8ae4-579150f43d46" valueTypeId="e2bf1442-d30f-45dc-8c8c-aa9a4a0e504e"/>
+    <refType typeId="72af9fa6-1a2a-40e1-9052-ef8e3c385eb0" valueTypeId="8b3db516-af9c-47d4-a500-55391e41f3bc"/>
+    <selectionType typeId="e3a2ce5c-eefd-410d-8dbe-a7c2c825c433" valueTypeId="539eb809-d1e8-4600-98c7-f88a84a1d639"/>
+    <listType typeId="85e95730-910f-4ef1-b0e3-0d4aa86b23ce" valueTypeId="3bfc7a22-bd1e-46ec-95c3-b65bcb44a938"/>
+    <managerType typeId="13e78d9f-cc33-4fc9-9e4d-4d9bb98a41e1" valueTypeId="85a62b08-9226-475b-b8cc-d4917a6287e1"/>
+  </producedTypes>
+  <name>ТЦОчередьСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь сообщений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТЦОчередьСообщений.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТЦОчередьСообщений.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Сообщение</value>
+  </objectPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Хранилище данных механизма обмена сообщениями. Адресатом и отправителем сообщения является любая ссылка, само сообщение, это ссылка на любое перечисление, а произвольные параметры передаются в виде хранилища значений.</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="cecc831f-9255-46c6-a510-80005cea6680">
+    <name>Адрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <type>
+      <types>AnyRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на любой объект, по которой можно получить сообщение.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2372a9e3-5225-42cd-ba7c-e4825ac1bffb">
+    <name>Отправитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправитель</value>
+    </synonym>
+    <type>
+      <types>AnyRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на любой объект. Если указана, то адресат сможет ответить по ней отправителю, при необходимости.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4a52d0d1-8ce5-4462-8945-f1d12a9c72c8">
+    <name>Сообщение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение</value>
+    </synonym>
+    <type>
+      <types>EnumRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на любое перечисление, которая идентифицирует назначение сообщения.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6c6548af-7560-4266-bfef-cca5ad85eb4f">
+    <name>Параметры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Параметры сообщения в произвольной форме, которые передаются в виде хранилища значений.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

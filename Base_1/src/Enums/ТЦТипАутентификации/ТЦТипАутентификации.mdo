@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6513dda0-113d-47ad-8eb7-17fd75c4e625">
+  <producedTypes>
+    <refType typeId="7eac84a1-1e3f-4b4c-b9af-b6f00ac3c349" valueTypeId="c97cffa4-7885-4bfa-93f7-a83b2ebd6d8f"/>
+    <listType typeId="c52493e0-395f-4eef-be00-f360b4de831f" valueTypeId="ea9f53ba-1391-4660-a5ca-7a3944833c72"/>
+    <managerType typeId="85b183f4-0ff9-4502-bc47-8657d7c72e0c" valueTypeId="f382ef2c-8f8a-463f-9fd7-d4a3dd3222b0"/>
+  </producedTypes>
+  <name>ТЦТипАутентификации</name>
+  <synonym>
+    <key>ru</key>
+    <value>ТЦТип аутентификации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ff736e16-d426-468c-ada1-599fe2dbe9af">
+    <name>Аутентификация1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аутентификация 1С:Предприятия</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="483e061b-473b-4cd5-ba1c-8e6957735780">
+    <name>АутентификацияОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аутентификация операционной системы</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

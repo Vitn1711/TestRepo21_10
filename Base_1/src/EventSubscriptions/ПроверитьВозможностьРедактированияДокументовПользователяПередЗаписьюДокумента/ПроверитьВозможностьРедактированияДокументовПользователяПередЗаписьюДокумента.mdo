@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5bc6355a-0cb8-4b54-97fb-da0ff9df8a46">
+  <name>ПроверитьВозможностьРедактированияДокументовПользователяПередЗаписьюДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить возможность редактирования документов пользователя перед записью документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПраваДоступаКОбъектам.ПроверитьВозможностьРедактированияДокументовПользователяПередЗаписьюДокумента</handler>
+</mdclass:EventSubscription>

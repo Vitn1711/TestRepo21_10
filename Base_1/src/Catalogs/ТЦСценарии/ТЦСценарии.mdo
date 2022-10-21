@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="109a8428-c468-4220-bc0c-c8bec47b5732">
+  <producedTypes>
+    <objectType typeId="f5db8f85-e06c-40f4-8ddf-f9811dd17496" valueTypeId="9d15fda4-10cb-4c3b-8053-5d9355ca40a6"/>
+    <refType typeId="d8ae2c83-d450-4217-b04e-23beb2ec674c" valueTypeId="e1e332de-2891-4122-a086-43a943ef3b1e"/>
+    <selectionType typeId="2d1214a1-5876-4db0-a1b7-603fa69b6c49" valueTypeId="eca67d96-a87f-4e36-bbfc-3150c919fad8"/>
+    <listType typeId="ba278b3a-41cd-4a64-a9f8-6d733d94a4d0" valueTypeId="5f252daf-0824-4f2b-bbc6-775c5d20df78"/>
+    <managerType typeId="4aa96b96-5cd3-4d22-a15c-9d828de1f341" valueTypeId="cf849dcb-3d22-4c41-8df3-8d46fa15b00c"/>
+  </producedTypes>
+  <name>ТЦСценарии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сценарии</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТЦСценарии.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТЦСценарии.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Сценарий</value>
+  </objectPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Описание конфигураций тестирования, запуск тестов</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТЦСценарии.Form.Сценарий</defaultObjectForm>
+  <defaultListForm>Catalog.ТЦСценарии.Form.Сценарии</defaultListForm>
+  <attributes uuid="63ebb77d-f263-47b3-9fdd-7f7e5b53d206">
+    <name>ДлительностьВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительность выполнения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Длительность выполнения сценария (сек.). Если значение рано нулю, длительность выполнения ограничена только таймаутом выполнения.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="61d7a04a-ca96-43da-b0de-f5224882dcfe">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Описание назначения сценария и подробная информация о том, как им пользоваться</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4077bb9a-45d8-4b45-92bf-5865ef32ad40">
+    <name>ПаузаПослеЗапускаВРМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пауза после запуска ВП</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Необходимость приостанавливать процесс тестирования сразу после запуска всех Виртуальных Рабочих Мест (например, для подключения к ним отладчиком)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="31617eed-4443-445f-b837-78840b830143">
+    <name>ТаймаутВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут выполнения (сек.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Максимальная длительность выполнения сценария в секундах, по истечении которой, выполнение сценария прерывается. При выполнении сценария, виртуальные пользователи выполняют соответствующие их роли действия.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e129e457-2a7a-4fbb-adc4-3ba59731b43a">
+    <name>ТаймаутЗагрузкиСценарияКлиентом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут загрузки сценария клиентом (сек.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Максимальная длительность, в секундах, отведенная на загрузку сценария Виртуальными Рабочими Местами</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="472ea649-e1b9-4223-86ee-544a7985b855">
+    <name>ТаймаутЗаписиРезультатов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут записи результатов (сек.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Максимальная длительность записи результатов выполнения действий виртуальных пользователей в секундах.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bf0d943d-8e34-4c5f-b5f2-4d51bf8eabcc">
+    <name>ТаймаутЗапускаКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут запуска клиента (сек.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Максимальная длительность, в секундах, запуска клиентов и переключение их в Режим Виртуальных Рабочих Пользователей</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="61386e1f-f962-4bf1-bf43-61eab11c03fb">
+    <name>ТаймаутИнициализации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут инициализации (сек.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Максимальная длительность инициализации виртуальных пользователей в секундах, по истечении которой, выполнение сценария прерывается. На этапе инициализации выполняется подготовка данных для тестирования.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0a097f53-b714-4028-986e-722908fae2d2">
+    <name>ТаймаутОпросаКлиента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут опроса клиента (сек.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Интервал врмени, в секундах, через который происходит перечитка сообщений. Чем меньше эта длительность, тем лучше отклик, но больше нагрузка на оборудование</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="344f311b-ba37-42f4-994d-98b0d5f35659">
+    <name>ТаймаутПодготовки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут подготовки (сек.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Максимальная длительность подготовки в секундах, по истечении которой, выполнение сценария прерывается. На этапе подготовки, проверяется работоспособность Агентов Тест-центра и, при необходимости, запускается необходимое количество ВРМ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a4336c1a-31e3-43a6-9b07-6a05a3abc920">
+    <name>ТаймаутУдаленияДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут удаления данных (сек.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Максимальная длительность удаления данных, созданных в процессе выполнения действий и инициализации, в секундах.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="e638f2ae-8009-437c-a3f5-f40db2a65f7e">
+    <producedTypes>
+      <objectType typeId="c1362e2d-2b7e-4158-a932-35c97b56a554" valueTypeId="617c8091-c58e-4c48-89fd-db22d591c8e2"/>
+      <rowType typeId="8144adfc-c86f-4f26-8eca-189a0f692456" valueTypeId="4f3ed69e-9717-47b7-a12d-58abbd3c7176"/>
+    </producedTypes>
+    <name>Структура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структура</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="7af3b409-97c4-42c3-8565-cd0a7d9609dc">
+      <name>Роль</name>
+      <synonym>
+        <key>ru</key>
+        <value>Роль</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТЦРоли</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Инструкция пользователя с конкретными параметрами, в соответствии с которой он будет выполнять действия во время тестирования.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ca79109c-339e-4438-94f6-daeed0566b62">
+      <name>Пользователь</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пользователь</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТЦПользователи</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Имя и пароль пользователя, от имени которого необходимо запустить клиентское приложение 1С:Предприятия и выполнять тестирование.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7a532a9a-7538-4b65-8e8e-01d3c313a5ba">
+      <name>Клиент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Клиент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТЦКлиенты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Параметры запуска клиентского приложения 1С:Предприятия на указанном компьютере, которое будет использоваться виртуальным пользователем, для выполнений действий, в соответствии со своей ролью.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2fe33fa7-d221-4b35-bbbf-d893167eb947">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество одинаковых виртуальных пользователей. Удобнее указать количество, чем вводить ряд одинаковых строк.</value>
+      </toolTip>
+      <minValue xsi:type="core:StringValue">
+        <value>1</value>
+      </minValue>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="7f02a2eb-92bb-445c-be6b-9745ca4f7250">
+    <name>Сценарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сценарий</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="32a19b2c-86a1-4dee-ae4a-d8ff9ba2ccc9">
+    <name>Сценарии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сценарии</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="cc04afb9-8977-453e-a4e0-7aca2f0391f9">
+    <name>ПоказатьСценарииТестирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сценарии тестирования</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Описание конфигураций тестирования, запуск тестов</value>
+    </toolTip>
+  </commands>
+</mdclass:Catalog>

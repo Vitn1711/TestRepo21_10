@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd233955-83e4-4c99-918e-1a92dd762b58">
+  <producedTypes>
+    <refType typeId="2ceceaae-77f1-42a5-a1bb-a682ab4f8f9f" valueTypeId="ed01006b-82b6-4dfc-8cc2-f144a2454fa8"/>
+    <listType typeId="1b670928-e231-4b69-aa9e-aa755018a8e9" valueTypeId="412d8fb7-c938-4d3e-9eb1-13606a2a9da2"/>
+    <managerType typeId="0afeb48f-80f6-4e55-83ce-edaade57f461" valueTypeId="1d1bac51-25b7-4192-90f7-2245a1caf721"/>
+  </producedTypes>
+  <name>ТЦТипПрокси</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип прокси</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="74b0fc2c-b493-4f6f-9082-7e66cf948cd0">
+    <name>НеИспользовать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не использовать</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3e6c3d22-5e89-4c75-a43b-b3cedd5469f1">
+    <name>АвтоОпределение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать автоматическое определение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bf02553d-8c49-4fa1-b2c9-5fc92ec3c142">
+    <name>УказатьНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Указать настройки</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

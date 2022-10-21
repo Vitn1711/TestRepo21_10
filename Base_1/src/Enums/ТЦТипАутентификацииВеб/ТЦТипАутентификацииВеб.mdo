@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e891d09-ca05-467e-805f-83c35ed30dba">
+  <producedTypes>
+    <refType typeId="80edd708-62ce-4289-bf4e-c8c2a1cbe72c" valueTypeId="17395860-0bf2-4c97-9fc6-152296b6c96d"/>
+    <listType typeId="cb5230f8-703a-4112-8d81-65c1a85cedbf" valueTypeId="108db587-6c60-4b86-9ba9-922013bb000a"/>
+    <managerType typeId="1089152e-a6a7-4ad0-a8da-ca155665a800" valueTypeId="8afdbab0-0032-430b-9532-c2512642bbce"/>
+  </producedTypes>
+  <name>ТЦТипАутентификацииВеб</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип аутентификации пользователя веб-сервера</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="31d1c762-7f40-46c9-b74a-738477747c2f">
+    <name>Авто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбирать автоматически</value>
+    </synonym>
+    <comment>установка обязательного применения аутентификации операционной системы при старте 1С:Предприятия</comment>
+  </enumValues>
+  <enumValues uuid="dbd0360a-c407-48b8-b93a-d8aad0ebf51d">
+    <name>ИмяПароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрашивать имя и пароль</value>
+    </synonym>
+    <comment>запрет применения аутентификации операционной системы при старте 1С:Предприятия</comment>
+  </enumValues>
+</mdclass:Enum>

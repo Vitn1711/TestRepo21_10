@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5d32383-d293-4b66-9ecb-f67b5123cb7c">
+  <producedTypes>
+    <objectType typeId="1036a732-e060-497c-b5b0-d7fade300351" valueTypeId="234ae7a4-4be6-48a6-b23b-fcfcfa62a9e4"/>
+    <managerType typeId="dde2f624-572d-4f1f-8b60-f79a0fcce6bd" valueTypeId="e107ea6e-c6be-42d2-b17a-f3a89fc9cb44"/>
+  </producedTypes>
+  <name>ТЦШаблонТестовойОбработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблон тестовой обработки с проведением документа</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТЦШаблонТестовойОбработки.Form.ТЦФорма</defaultForm>
+  <attributes uuid="6770cb3f-56ab-487b-b954-8f2590b3bfe5">
+    <name>СсылкаНаДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка на документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="eea80efb-7146-450a-b47c-ad00b468cc16">
+    <name>ЧислоИтераций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Число итераций</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="31d7e839-ac21-443f-9c23-65fee1ddd362">
+    <name>Пауза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пауза</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="88fa2f5f-d2ac-4a67-9398-c8d2569063e6">
+    <name>ТЦФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="69b3ad11-b2c8-4fbe-bb94-9e0d49e4f2fd">
+  <producedTypes>
+    <refType typeId="384583f4-1f5f-4a0f-9df5-ef56381f22e0" valueTypeId="2be7ba85-b67b-427f-a1a2-781b44ff3b61"/>
+    <listType typeId="38b805bd-641e-4158-b375-de0eb310fbdb" valueTypeId="ab787b61-8e68-455e-a406-e38dae47a54b"/>
+    <managerType typeId="7ccb7e3f-dcb0-4917-ab64-7de5f3e3db01" valueTypeId="2fbebd08-da2a-48ce-8dda-9ade95306cc0"/>
+  </producedTypes>
+  <name>ТЦСообщение</name>
+  <synonym>
+    <key>ru</key>
+    <value>ТЦСообщение</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0d0a0b4b-15a1-4ef2-ad2c-ebd53a61eef3">
+    <name>ГотовКРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Готов к работе</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="de51f3ae-46cd-495e-adfc-c53fb541c6a9">
+    <name>ЗавершитьРаботу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершить работу</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fba093a4-9314-4a34-a929-8461813639bd">
+    <name>ЗапуститьВРМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запустить ВРМ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1f017f5f-65cc-4b1b-8aa5-c80c2e869e4b">
+    <name>ПроверкаАктивности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка активности</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ec22d5a4-5af0-45b9-b95f-65da608b65a0">
+    <name>ВРМЗапущены</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВРМзапущены</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3fc1ab2c-16e4-4c43-a193-d3e57bea0a07">
+    <name>ОшибкаЗапускаВРМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка запуска ВРМ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="663337d1-27d0-474a-b05e-cf1e3d0c7f19">
+    <name>ОтменитьЗапускВРМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отменить запуск ВРМ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b13d80e9-1ee6-41d6-8991-01c986a6fb4f">
+    <name>ИнициализироватьВП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инициализировать ВП</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="171c07ce-23d4-4891-a6dc-1e9844790e86">
+    <name>Выполнить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнить</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="97e40669-3068-40b9-ada1-62199347740d">
+    <name>Отменить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отменить</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="beed53ff-a4d8-4e98-b7fc-c28334c8441f">
+    <name>ВыполненоУспешно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнено успешно</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fadb26c3-f1f8-42a6-9368-39b532d3ba72">
+    <name>ВыполненоСОшибкой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнено с ошибкой</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

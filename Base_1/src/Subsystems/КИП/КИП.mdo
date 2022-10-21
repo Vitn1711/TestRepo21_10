@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cd80e6ae-9914-42df-9c7a-0045be5c8551">
+  <name>КИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корпоративный инструментальный пакет</value>
+  </synonym>
+  <content>CommonModule.КипWindows</content>
+</mdclass:Subsystem>

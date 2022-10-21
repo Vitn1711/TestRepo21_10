@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c1972c6f-4a46-4559-921b-d4641e7ebc2f">
+  <producedTypes>
+    <objectType typeId="f118aaa8-e0fc-47c6-b219-6c6a3336ab85" valueTypeId="a0638903-7c9b-4a24-98bd-047057660ee4"/>
+    <refType typeId="cd5cfaf4-6426-4ad3-925c-5aaa4ea9f2ad" valueTypeId="271f6388-ebef-494a-8709-21b911810350"/>
+    <selectionType typeId="972c2b07-5e4d-4c3e-bf46-3d4aba6bf7c3" valueTypeId="738f81f2-16d1-4255-b249-edc57b66e9d0"/>
+    <listType typeId="67def886-eb3f-4068-adcc-166cd3504f58" valueTypeId="768b7d61-af32-4b14-b541-8d8e9e7420b2"/>
+    <managerType typeId="8a337fb2-0ef9-49d3-b440-9d593fa474e8" valueTypeId="5ff8d14d-6a2d-49d3-83e5-843d5c010218"/>
+  </producedTypes>
+  <name>ТЦВП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виртуальные пользователи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТЦВП.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТЦВП.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Виртуальный пользователь</value>
+  </objectPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Список запущенных на данный момент Виртуальных Рабочих Мест, выгрузка Виртуальных Рабочих Мест</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <quickChoice>true</quickChoice>
+  <choiceMode>QuickChoice</choiceMode>
+  <defaultObjectForm>Catalog.ТЦВП.Form.ВиртуальныйПользователь</defaultObjectForm>
+  <defaultListForm>Catalog.ТЦВП.Form.ВиртуальныеПользователи</defaultListForm>
+  <auxiliaryObjectForm>Catalog.ТЦВП.Form.ОбычноеВРМ</auxiliaryObjectForm>
+  <attributes uuid="de52c188-2613-4799-9cc8-212bbb81234b">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТЦКлиенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Параметры запуска этого Виртуального Рабочего Места</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2c0f6ae1-e60f-4124-8eae-a4a1e1148f12">
+    <name>Клон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клон</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТЦПользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1d3f08b7-54b0-4900-a23a-4a9abb763651">
+    <name>НомерСессии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер сессии</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d4a42c9f-dcd5-4ed0-9d3a-1deac8af9a04">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТЦПользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользовтель, от имени которого запущено это Виртуальное Рабочее Место</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1e1fbfba-bd26-4645-951a-3c7a33d29ead">
+    <name>Роль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТЦРоли</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Роль, которую в данный момент выполняет Виртуальный Пользователь на этом Виртуальном Рабочием Месте</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a1152b3c-2010-4cc7-86bb-d52f53212bcb">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТЦСостояние</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текущее состояние Виртуального Пользователя</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9413a586-cd3c-426f-a5cb-96c705c60dd8">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="b8a3bb59-364b-465c-9aaa-d0f0bd62cac7">
+    <name>ВиртуальныйПользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виртуальный пользователь</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8147aa8f-22a0-4ce9-be78-9227a776c7d1">
+    <name>ОбычноеВРМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обычное ВРМ</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="da96a3e3-d603-4f60-9d78-4143d20db51e">
+    <name>УправляемоеВРМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Управляемое ВРМ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0b8ab266-4d3d-423e-abdd-d351bc5f720a">
+    <name>ВиртуальныеПользователи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виртуальные пользователи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="91f616b5-9dd3-4706-9f7d-381929d25e59">
+    <name>РежимВРМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включить режим ВРМ</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Включить </value>
+    </toolTip>
+  </commands>
+</mdclass:Catalog>

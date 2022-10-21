@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d291ea3-39b0-4a02-87df-27c43ded7d3f">
+  <name>ТЦВнешнийКомпонент64</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внешний компонент (x86-64)</value>
+  </synonym>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4de47e6d-29ac-4a2d-aa64-e810bdc0d2f9">
+  <producedTypes>
+    <objectType typeId="5671f1af-c76a-4fb4-8b96-b8c4e9e66dfb" valueTypeId="17c6f312-8dfb-4b80-bcdc-a4f2daf27eb6"/>
+    <refType typeId="168c8bbb-69a3-4515-8e80-82807e85329a" valueTypeId="135baabf-dd06-455e-b8e4-2a4378285a4a"/>
+    <selectionType typeId="681b88f7-a9e0-45ab-9a19-9252edf2cf8f" valueTypeId="2a00a9ef-5708-411b-a8b8-82b10b0a2a8a"/>
+    <listType typeId="322bdc35-b86d-4ca2-a4f4-ad5c94e4ee50" valueTypeId="13c6edab-3734-4d19-83ad-317c09e04dc4"/>
+    <managerType typeId="31e87d03-878e-4aad-9f19-808b93532049" valueTypeId="22fe1e94-4a27-40b8-9284-58d889aeeac1"/>
+  </producedTypes>
+  <name>ТЦРоли</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТЦРоли.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТЦРоли.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Роль</value>
+  </objectPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Инструкции пользователей в виде Тестовых Обработок с конкретными параметрами, в соответствии с которыми они выполняют действия во время тестирования</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТЦРоли.Form.Роль</defaultObjectForm>
+  <defaultListForm>Catalog.ТЦРоли.Form.Роли</defaultListForm>
+  <attributes uuid="cea3abe1-a1b5-45eb-bd83-364407531f72">
+    <name>Обработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТЦОбработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Инструкция пользователя, в соответствии с которой он выполняет действия во время тестирования. Инструкция выполнена в виде обработки и может быть параметризована при помощи реквизитов, значения которых, после изменения, будут автоматически сохраняться</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="47c07e3d-6b11-4614-9175-0e06a309c89f">
+    <name>Параметры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Набор значений реквизитов обработки, которые настраиваются в форме обработки, при редактировании сценария и автоматически восстанавливаются перед началом выполнения сценария</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="88b3a262-8695-4298-bc9e-5a4955c70fa0">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Описание назначения роли</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="04482f66-6e28-410b-bb3a-8c2a0b4b9e1b">
+    <name>Роль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c831ef69-a145-4b4d-bb79-2ea370612ca1">
+    <name>Роли</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роли</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

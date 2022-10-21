@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3278d6ac-bb8a-4ee5-b20f-5bc097bbbeba">
+  <producedTypes>
+    <refType typeId="4e03ac60-7ac2-477c-97ee-bfbf44f07724" valueTypeId="8d3c8dbc-0660-4e7c-bc83-a4ee1c7e8671"/>
+    <listType typeId="5f577b68-70a2-4868-90dc-7d8680e4219f" valueTypeId="32fe7447-87e3-4ba6-b586-d51ef14109b4"/>
+    <managerType typeId="66b02803-04eb-4919-8fb0-fa1d9805f3b5" valueTypeId="518d27d9-d9ef-4679-abd0-94da96c2c76b"/>
+  </producedTypes>
+  <name>ТЦТипБраузера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип браузера</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="63567e04-de6e-42d8-9af7-200d596e4aa7">
+    <name>ПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>По-умолчанию</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="124139ee-fd66-480b-a3ce-5fc99f6d0f82">
+    <name>InternetExplorer</name>
+    <synonym>
+      <key>ru</key>
+      <value>Internet Explorer</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c7a56d22-add4-43c6-87b8-7c9473f18827">
+    <name>Firefox</name>
+    <synonym>
+      <key>ru</key>
+      <value>Firefox</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

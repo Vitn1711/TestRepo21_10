@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0af0914e-0533-4d97-8dcd-676a418bfdaa">
+  <name>ТЦАгент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Агент</value>
+  </synonym>
+</mdclass:CommonPicture>

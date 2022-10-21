@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Версия</dataPath>
+			<field>Версия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяВыполнения</dataPath>
+			<field>ВремяВыполнения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Значение</dataPath>
+			<field>Значение</field>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РезультатВыполнения</dataPath>
+			<field>РезультатВыполнения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Серия</dataPath>
+			<field>Серия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УсловияТестирования</dataPath>
+			<field>УсловияТестирования</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query> ВЫБРАТЬ
+	ЗапускТеста.КоличествоПользователей КАК Серия,
+	ЗапускТеста.ADPEX КАК Значение,
+	ЗапускТеста.Ссылка.Версия,
+	ЗапускТеста.Ссылка.ВремяВыполнения,
+	ЗапускТеста.Ссылка.УсловияТестирования,
+	ЗапускТеста.Ссылка.РезультатВыполнения
+ИЗ
+	Документ.ЗапускТеста.РезультатыЗапуска КАК ЗапускТеста
+	ГДЕ ЗапускТеста.Ссылка = &amp;ЗапускТеста
+	</query>
+	</dataSet>
+	<totalField>
+		<dataPath>Значение</dataPath>
+		<expression>Сумма(Значение)</expression>
+	</totalField>
+	<parameter>
+		<name>ЗапускТеста</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Запуск теста</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЗапускТеста</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Документ.ЗапускТеста.ПустаяСсылка</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Пользователей</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>APDEX</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.75</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<template>
+		<name>Макет3</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Серия</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Значение</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">21.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">21.625</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Серия</dcsat:name>
+			<dcsat:expression>Серия</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Значение</dcsat:name>
+			<dcsat:expression>Значение</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет4</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Версия</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/style" xsi:type="v8ui:Color">d8p1:FieldBackColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial Black" height="16" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Версия</dcsat:name>
+			<dcsat:expression>Версия</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет5</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Времявыполнения</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/style" xsi:type="v8ui:Color">d8p1:FieldBackColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Времявыполнения</dcsat:name>
+			<dcsat:expression>Времявыполнения</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет6</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">УсловияТестирования</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/style" xsi:type="v8ui:Color">d8p1:FieldBackColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">24.125</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>УсловияТестирования</dcsat:name>
+			<dcsat:expression>УсловияТестирования</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет7</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">РезультатВыполнения</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.1/data/ui/style" xsi:type="v8ui:Color">d8p1:FieldBackColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>РезультатВыполнения</dcsat:name>
+			<dcsat:expression>РезультатВыполнения</dcsat:expression>
+		</parameter>
+	</template>
+	<groupTemplate>
+		<groupName>ADPEX</groupName>
+		<templateType>Header</templateType>
+		<template>Макет3</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>Версия теста</groupName>
+		<templateType>Header</templateType>
+		<template>Макет4</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>Время выполнения теста</groupName>
+		<templateType>Header</templateType>
+		<template>Макет5</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>Условия тестирования</groupName>
+		<templateType>Header</templateType>
+		<template>Макет6</template>
+	</groupTemplate>
+	<groupTemplate>
+		<groupName>Результат выполнения</groupName>
+		<templateType>Header</templateType>
+		<template>Макет7</template>
+	</groupTemplate>
+	<groupHeaderTemplate>
+		<groupName>ADPEX</groupName>
+		<templateType>Header</templateType>
+		<template>Макет2</template>
+	</groupHeaderTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Значение</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ЗапускТеста</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Документ.ЗапускТеста.ПустаяСсылка</dcscor:value>
+					<dcsset:userSettingID>e439442a-2f28-40e4-aad9-c872d5897a85</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:ChartType">Column</dcscor:value>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТипДиаграммы.ВидПодписей</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:ChartLabelType">Series</dcscor:value>
+					</dcscor:item>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>Версия теста</dcsset:name>
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Версия</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>Время выполнения теста</dcsset:name>
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ВремяВыполнения</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>Условия тестирования</dcsset:name>
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>УсловияТестирования</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Условия тестирования</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>Результат выполнения</dcsset:name>
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>РезультатВыполнения</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Производительность серверной части тестового стенда</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemChart">
+				<dcsset:series>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Серия</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto">
+							<dcsset:use>false</dcsset:use>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Серия</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Значение</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Значение</dcsset:left>
+									<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">0.85</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветВДиаграмме</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#00FF00</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+				</dcsset:series>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>Значение</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>Серия</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Значение</dcsset:left>
+								<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0.85</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветФона</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#00FF00</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветВДиаграмме</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#00FF00</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>Серия</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>Значение</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">Значение</dcsset:left>
+								<dcsset:comparisonType>Less</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:decimal">0.85</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветВДиаграмме</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:ChartType">Column</dcscor:value>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ТипДиаграммы.ВидПодписей</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:ChartLabelType">Series</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ТипДиаграммы.РасположениеЛегенды</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionChartLegendPlacement">None</dcscor:value>
+						</dcscor:item>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Диаграмма изменения производительности</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:row>
+					<dcsset:name>ADPEX</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Серия</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Серия</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance/>
+							<dcsset:presentation xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователей</v8:content>
+								</v8:item>
+							</dcsset:presentation>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+				</dcsset:row>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">Separately</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Таблица значений APDEX</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

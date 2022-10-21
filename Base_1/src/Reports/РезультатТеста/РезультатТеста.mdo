@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="219b7217-df26-452a-bfc7-3aef1f8140aa">
+  <producedTypes>
+    <objectType typeId="60bd4c7e-80b4-4a6d-979f-eadcbe70921f" valueTypeId="1a173c77-7938-4831-920d-8408e6bfef58"/>
+    <managerType typeId="4184c042-d990-4992-9a99-63cf1ef0329b" valueTypeId="56b584d2-918c-4b86-a190-e18c3e1e4c34"/>
+  </producedTypes>
+  <name>РезультатТеста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Результат теста</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РезультатТеста.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.РезультатТеста.Template.РезультатТеста</mainDataCompositionSchema>
+  <forms uuid="fff886f2-a3b0-4a37-8028-f1f5b6cf82e4">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="cebda7a9-89f1-42e8-8c17-15ade9eae8e6">
+    <name>РезультатТеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат теста</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

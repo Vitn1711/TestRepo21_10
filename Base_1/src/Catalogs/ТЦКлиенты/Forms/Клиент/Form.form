@@ -1,0 +1,5173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormField">
+    <name>Наименование</name>
+    <id>93</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Description</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>НаименованиеExtendedTooltip</name>
+      <id>105</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>НаименованиеКонтекстноеМеню</name>
+      <id>94</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>Компьютер</name>
+    <id>95</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.Компьютер</segments>
+    </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>КомпьютерПриИзменении</name>
+    </handlers>
+    <extendedTooltip>
+      <name>КомпьютерExtendedTooltip</name>
+      <id>106</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>КомпьютерКонтекстноеМеню</name>
+      <id>96</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormGroup">
+    <name>Категории</name>
+    <id>4</id>
+    <items xsi:type="form:FormGroup">
+      <name>Клиент</name>
+      <id>92</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Клиент</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Клиент</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>КлиентExtendedTooltip</name>
+        <id>108</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ЗакладкаОсновные</name>
+      <id>7</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаПриложение</name>
+        <id>3</id>
+        <items xsi:type="form:FormField">
+          <name>ТипКлиента</name>
+          <id>1</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.ТипКлиента</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>ТипКлиентаПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ТипКлиентаExtendedTooltip</name>
+            <id>111</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ТипКлиентаКонтекстноеМеню</name>
+            <id>2</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>RadioButtonField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+            <columnsCount>2</columnsCount>
+            <choiceList>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ТЦТипКлиента.EnumValue.Тонкий1С</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ТЦТипКлиента.EnumValue.ТонкийВеб</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>Веб</value>
+              </presentation>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ТЦТипКлиента.EnumValue.Веб</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ТЦТипКлиента.EnumValue.ТолстыйОбычный</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <value xsi:type="core:ReferenceValue">
+                <value>Enum.ТЦТипКлиента.EnumValue.ТолстыйУправляемый</value>
+              </value>
+            </choiceList>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ТипБраузера</name>
+          <id>12</id>
+          <title>
+            <key>ru</key>
+            <value>     Веб-браузер</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.ТипБраузера</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ТипБраузераПриИзменении</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ТипБраузераExtendedTooltip</name>
+            <id>112</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ТипБраузераКонтекстноеМеню</name>
+            <id>13</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Тип клиента:</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа приложение</value>
+        </toolTip>
+        <horizontalStretch>true</horizontalStretch>
+        <extendedTooltip>
+          <name>ГруппаПриложениеExtendedTooltip</name>
+          <id>110</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <representation>StrongSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ЗапускПриложения</name>
+        <id>51</id>
+        <items xsi:type="form:FormField">
+          <name>АвтоПуть</name>
+          <id>52</id>
+          <title>
+            <key>ru</key>
+            <value>Выяснить имя исполняемго файла клиента, во время запуска ВРМ, автоматически</value>
+          </title>
+          <visible>true</visible>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.АвтоПуть</segments>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>ПриИзмененииОбновитьСтрокуЗапускаИДоступность</name>
+          </handlers>
+          <extendedTooltip>
+            <name>АвтоПутьExtendedTooltip</name>
+            <id>114</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>АвтоПутьКонтекстноеМеню</name>
+            <id>53</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ИмяКаталога</name>
+          <id>54</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.ИмяКаталога</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ИмяКаталогаExtendedTooltip</name>
+            <id>115</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ИмяКаталогаКонтекстноеМеню</name>
+            <id>55</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <handlers>
+              <event>StartChoice</event>
+              <name>ИмяКаталогаНачалоВыбора</name>
+            </handlers>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <choiceButton>true</choiceButton>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>ИмяФайла</name>
+          <id>56</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.ИмяФайла</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ИмяФайлаExtendedTooltip</name>
+            <id>116</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ИмяФайлаКонтекстноеМеню</name>
+            <id>57</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <handlers>
+              <event>StartChoice</event>
+              <name>ИмяФайлаНачалоВыбора</name>
+            </handlers>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <choiceButton>true</choiceButton>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаДопПараметры</name>
+          <id>90</id>
+          <items xsi:type="form:FormField">
+            <name>ДопПараметры</name>
+            <id>88</id>
+            <title>
+              <key>ru</key>
+              <value>Доп. параметры</value>
+            </title>
+            <visible>true</visible>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.ДополниьельныеПараметры</segments>
+            </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+            </handlers>
+            <extendedTooltip>
+              <name>ДопПараметрыExtendedTooltip</name>
+              <id>118</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ДопПараметрыКонтекстноеМеню</name>
+              <id>89</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:Button">
+            <name>ИзменитьДопПараметры</name>
+            <id>91</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <skipOnInput>false</skipOnInput>
+            <extendedTooltip>
+              <name>ИзменитьДопПараметрыExtendedTooltip</name>
+              <id>119</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualButton</type>
+            <commandName>Form.Command.ИзменитьДопПараметры</commandName>
+            <representation>Auto</representation>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <placementArea>UserCmds</placementArea>
+            <representationInContextMenu>Auto</representationInContextMenu>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа доп параметры</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа доп параметры</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаДопПараметрыExtendedTooltip</name>
+            <id>117</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Запуск приложения:</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Запуск приложения</value>
+        </toolTip>
+        <horizontalStretch>true</horizontalStretch>
+        <extendedTooltip>
+          <name>ЗапускПриложенияExtendedTooltip</name>
+          <id>113</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <representation>StrongSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ВебСервер</name>
+        <id>63</id>
+        <items xsi:type="form:FormField">
+          <name>АдресБраузера</name>
+          <id>49</id>
+          <title>
+            <key>ru</key>
+            <value>Адрес (URL)</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.АдресБраузера</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+          </handlers>
+          <extendedTooltip>
+            <name>АдресБраузераExtendedTooltip</name>
+            <id>121</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>АдресБраузераКонтекстноеМеню</name>
+            <id>50</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>Прокси</name>
+          <id>64</id>
+          <items xsi:type="form:Decoration">
+            <name>ОтступПрокси</name>
+            <id>68</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ОтступПроксиExtendedTooltip</name>
+              <id>123</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ОтступПроксиКонтекстноеМеню</name>
+              <id>69</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <width>1</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <skipOnInput>false</skipOnInput>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+              <titleHeight>1</titleHeight>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormGroup">
+            <name>ГруппаПараметрыПрокси</name>
+            <id>67</id>
+            <items xsi:type="form:FormField">
+              <name>ТипПрокси</name>
+              <id>65</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <dataPath xsi:type="form:DataPath">
+                <segments>Объект.ТипПрокси</segments>
+              </dataPath>
+              <titleLocation>None</titleLocation>
+              <handlers>
+                <event>OnChange</event>
+                <name>ПриИзмененииОбновитьСтрокуЗапускаИДоступность</name>
+              </handlers>
+              <extendedTooltip>
+                <name>ТипПроксиExtendedTooltip</name>
+                <id>125</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <contextMenu>
+                <name>ТипПроксиКонтекстноеМеню</name>
+                <id>66</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <autoFill>true</autoFill>
+              </contextMenu>
+              <type>RadioButtonField</type>
+              <editMode>Enter</editMode>
+              <showInHeader>true</showInHeader>
+              <headerHorizontalAlign>Left</headerHorizontalAlign>
+              <showInFooter>true</showInFooter>
+              <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+                <columnsCount>2</columnsCount>
+                <choiceList>
+                  <value xsi:type="core:ReferenceValue">
+                    <value>Enum.ТЦТипПрокси.EnumValue.НеИспользовать</value>
+                  </value>
+                </choiceList>
+                <choiceList>
+                  <presentation>
+                    <key>ru</key>
+                    <value>Указать настройки:</value>
+                  </presentation>
+                  <value xsi:type="core:ReferenceValue">
+                    <value>Enum.ТЦТипПрокси.EnumValue.УказатьНастройки</value>
+                  </value>
+                </choiceList>
+                <choiceList>
+                  <value xsi:type="core:ReferenceValue">
+                    <value>Enum.ТЦТипПрокси.EnumValue.АвтоОпределение</value>
+                  </value>
+                </choiceList>
+              </extInfo>
+            </items>
+            <items xsi:type="form:FormGroup">
+              <name>ГруппаДопПрокси</name>
+              <id>80</id>
+              <items xsi:type="form:Decoration">
+                <name>ОтступДопПрокси</name>
+                <id>81</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <extendedTooltip>
+                  <name>ОтступДопПроксиExtendedTooltip</name>
+                  <id>127</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ОтступДопПроксиКонтекстноеМеню</name>
+                  <id>82</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>Label</type>
+                <width>1</width>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <skipOnInput>false</skipOnInput>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormGroup">
+                <name>ГруппаАдресПрокси</name>
+                <id>71</id>
+                <items xsi:type="form:FormField">
+                  <name>АдресПрокси</name>
+                  <id>72</id>
+                  <title>
+                    <key>ru</key>
+                    <value>Адрес</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.АдресПрокси</segments>
+                  </dataPath>
+                  <handlers>
+                    <event>OnChange</event>
+                    <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+                  </handlers>
+                  <extendedTooltip>
+                    <name>АдресПроксиExtendedTooltip</name>
+                    <id>129</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>АдресПроксиКонтекстноеМеню</name>
+                    <id>73</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <width>17</width>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormField">
+                  <name>ПользовательПрокси</name>
+                  <id>76</id>
+                  <title>
+                    <key>ru</key>
+                    <value>Пользователь</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.ПользовательПрокси</segments>
+                  </dataPath>
+                  <handlers>
+                    <event>OnChange</event>
+                    <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+                  </handlers>
+                  <extendedTooltip>
+                    <name>ПользовательПроксиExtendedTooltip</name>
+                    <id>130</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ПользовательПроксиКонтекстноеМеню</name>
+                    <id>77</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <width>17</width>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>Группа адрес прокси</value>
+                </title>
+                <toolTip>
+                  <key>ru</key>
+                  <value>Группа адрес прокси</value>
+                </toolTip>
+                <extendedTooltip>
+                  <name>ГруппаАдресПроксиExtendedTooltip</name>
+                  <id>128</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>UsualGroup</type>
+                <extInfo xsi:type="form:UsualGroupExtInfo">
+                  <group>Vertical</group>
+                  <showLeftMargin>true</showLeftMargin>
+                  <united>true</united>
+                  <throughAlign>Auto</throughAlign>
+                  <currentRowUse>Auto</currentRowUse>
+                </extInfo>
+              </items>
+              <items xsi:type="form:FormGroup">
+                <name>Пользователиьрокси</name>
+                <id>70</id>
+                <items xsi:type="form:FormField">
+                  <name>ПортПрокси</name>
+                  <id>74</id>
+                  <title>
+                    <key>ru</key>
+                    <value>Порт</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.ПортПрокси</segments>
+                  </dataPath>
+                  <handlers>
+                    <event>OnChange</event>
+                    <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+                  </handlers>
+                  <extendedTooltip>
+                    <name>ПортПроксиExtendedTooltip</name>
+                    <id>132</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ПортПроксиКонтекстноеМеню</name>
+                    <id>75</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <width>17</width>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <spinButton>true</spinButton>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <items xsi:type="form:FormField">
+                  <name>ПарольПрокси</name>
+                  <id>78</id>
+                  <title>
+                    <key>ru</key>
+                    <value>Пароль</value>
+                  </title>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <dataPath xsi:type="form:DataPath">
+                    <segments>Объект.ПарольПрокси</segments>
+                  </dataPath>
+                  <handlers>
+                    <event>OnChange</event>
+                    <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+                  </handlers>
+                  <extendedTooltip>
+                    <name>ПарольПроксиExtendedTooltip</name>
+                    <id>133</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <type>Label</type>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <extInfo xsi:type="form:LabelDecorationExtInfo">
+                      <horizontalAlign>Left</horizontalAlign>
+                    </extInfo>
+                  </extendedTooltip>
+                  <contextMenu>
+                    <name>ПарольПроксиКонтекстноеМеню</name>
+                    <id>79</id>
+                    <visible>true</visible>
+                    <enabled>true</enabled>
+                    <userVisible>
+                      <common>true</common>
+                    </userVisible>
+                    <autoFill>true</autoFill>
+                  </contextMenu>
+                  <type>InputField</type>
+                  <editMode>Enter</editMode>
+                  <showInHeader>true</showInHeader>
+                  <headerHorizontalAlign>Left</headerHorizontalAlign>
+                  <showInFooter>true</showInFooter>
+                  <extInfo xsi:type="form:InputFieldExtInfo">
+                    <width>17</width>
+                    <autoMaxWidth>true</autoMaxWidth>
+                    <autoMaxHeight>true</autoMaxHeight>
+                    <wrap>true</wrap>
+                    <passwordMode>true</passwordMode>
+                    <chooseType>true</chooseType>
+                    <typeDomainEnabled>true</typeDomainEnabled>
+                    <textEdit>true</textEdit>
+                  </extInfo>
+                </items>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <title>
+                  <key>ru</key>
+                  <value>Пользователиьрокси</value>
+                </title>
+                <toolTip>
+                  <key>ru</key>
+                  <value>Пользователиьрокси</value>
+                </toolTip>
+                <extendedTooltip>
+                  <name>ПользователиьроксиExtendedTooltip</name>
+                  <id>131</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <type>UsualGroup</type>
+                <extInfo xsi:type="form:UsualGroupExtInfo">
+                  <group>Vertical</group>
+                  <showLeftMargin>true</showLeftMargin>
+                  <united>true</united>
+                  <throughAlign>Auto</throughAlign>
+                  <currentRowUse>Auto</currentRowUse>
+                </extInfo>
+              </items>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <title>
+                <key>ru</key>
+                <value>Группа доп прокси</value>
+              </title>
+              <toolTip>
+                <key>ru</key>
+                <value>Группа доп прокси</value>
+              </toolTip>
+              <extendedTooltip>
+                <name>ГруппаДопПроксиExtendedTooltip</name>
+                <id>126</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <type>Label</type>
+                <autoMaxWidth>true</autoMaxWidth>
+                <autoMaxHeight>true</autoMaxHeight>
+                <extInfo xsi:type="form:LabelDecorationExtInfo">
+                  <horizontalAlign>Left</horizontalAlign>
+                </extInfo>
+              </extendedTooltip>
+              <type>UsualGroup</type>
+              <extInfo xsi:type="form:UsualGroupExtInfo">
+                <showLeftMargin>true</showLeftMargin>
+                <united>true</united>
+                <throughAlign>Auto</throughAlign>
+                <currentRowUse>Auto</currentRowUse>
+              </extInfo>
+            </items>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <title>
+              <key>ru</key>
+              <value>Группа параметры прокси</value>
+            </title>
+            <toolTip>
+              <key>ru</key>
+              <value>Группа параметры прокси</value>
+            </toolTip>
+            <extendedTooltip>
+              <name>ГруппаПараметрыПроксиExtendedTooltip</name>
+              <id>124</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <type>UsualGroup</type>
+            <extInfo xsi:type="form:UsualGroupExtInfo">
+              <group>Vertical</group>
+              <showLeftMargin>true</showLeftMargin>
+              <united>true</united>
+              <throughAlign>Auto</throughAlign>
+              <currentRowUse>Auto</currentRowUse>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Вариант использования прокси:</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Прокси</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ПроксиExtendedTooltip</name>
+            <id>122</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <showTitle>true</showTitle>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаАутентификацияВеб</name>
+          <id>85</id>
+          <items xsi:type="form:Decoration">
+            <name>ОтступАутентификацияВеб</name>
+            <id>86</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <extendedTooltip>
+              <name>ОтступАутентификацияВебExtendedTooltip</name>
+              <id>135</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ОтступАутентификацияВебКонтекстноеМеню</name>
+              <id>87</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>Label</type>
+            <width>1</width>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <skipOnInput>false</skipOnInput>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>ТипАутентификацииВеб</name>
+            <id>83</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.ТипАутентификацииВеб</segments>
+            </dataPath>
+            <titleLocation>None</titleLocation>
+            <handlers>
+              <event>OnChange</event>
+              <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+            </handlers>
+            <extendedTooltip>
+              <name>ТипАутентификацииВебExtendedTooltip</name>
+              <id>136</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ТипАутентификацииВебКонтекстноеМеню</name>
+              <id>84</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>RadioButtonField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+              <choiceList>
+                <value xsi:type="core:ReferenceValue">
+                  <value>Enum.ТЦТипАутентификацииВеб.EnumValue.Авто</value>
+                </value>
+              </choiceList>
+              <choiceList>
+                <value xsi:type="core:ReferenceValue">
+                  <value>Enum.ТЦТипАутентификацииВеб.EnumValue.ИмяПароль</value>
+                </value>
+              </choiceList>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Способ аутентификации пользователя веб-сервера:</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа аутентификация веб</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаАутентификацияВебExtendedTooltip</name>
+            <id>134</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <showTitle>true</showTitle>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Веб-сервер:</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Веб сервер</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ВебСерверExtendedTooltip</name>
+          <id>120</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <representation>StrongSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Основные</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Закладка основные</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ЗакладкаОсновныеExtendedTooltip</name>
+        <id>109</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormGroup">
+      <name>ЗакладкаДополнительные</name>
+      <id>8</id>
+      <items xsi:type="form:FormField">
+        <name>НеПредупреждать</name>
+        <id>35</id>
+        <title>
+          <key>ru</key>
+          <value>Не выдавать предупреждения при запуске</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.НеПредупреждать</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+        </handlers>
+        <extendedTooltip>
+          <name>НеПредупреждатьExtendedTooltip</name>
+          <id>138</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>НеПредупреждатьКонтекстноеМеню</name>
+          <id>36</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>РазрешатьОтладку</name>
+        <id>37</id>
+        <title>
+          <key>ru</key>
+          <value>Установить режим разрешения отладки</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.РазрешатьОтладку</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПриИзмененииОбновитьСтрокуЗапускаИДоступность</name>
+        </handlers>
+        <extendedTooltip>
+          <name>РазрешатьОтладкуExtendedTooltip</name>
+          <id>139</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>РазрешатьОтладкуКонтекстноеМеню</name>
+          <id>38</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>НачинатьОтладку</name>
+        <id>39</id>
+        <title>
+          <key>ru</key>
+          <value>Начинать отладку при запуске</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.НачинатьОтладку</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПриИзмененииОбновитьСтрокуЗапускаИДоступность</name>
+        </handlers>
+        <extendedTooltip>
+          <name>НачинатьОтладкуExtendedTooltip</name>
+          <id>140</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>НачинатьОтладкуКонтекстноеМеню</name>
+          <id>40</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаАдресОтладчика</name>
+        <id>60</id>
+        <items xsi:type="form:Decoration">
+          <name>ОтступОтладчика</name>
+          <id>61</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ОтступОтладчикаExtendedTooltip</name>
+            <id>142</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ОтступОтладчикаКонтекстноеМеню</name>
+            <id>62</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <width>1</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <skipOnInput>false</skipOnInput>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>АдресОтладчика</name>
+          <id>58</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.АдресОтладчика</segments>
+          </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+          </handlers>
+          <extendedTooltip>
+            <name>АдресОтладчикаExtendedTooltip</name>
+            <id>143</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>АдресОтладчикаКонтекстноеМеню</name>
+            <id>59</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа адрес отладчика</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа адрес отладчика</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ГруппаАдресОтладчикаExtendedTooltip</name>
+          <id>141</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ОтображатьПоказатели</name>
+        <id>41</id>
+        <title>
+          <key>ru</key>
+          <value>Отображать показатели производительности</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ОтображатьПоказатели</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ОтображатьПоказателиExtendedTooltip</name>
+          <id>144</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ОтображатьПоказателиКонтекстноеМеню</name>
+          <id>42</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ОтображатьВсеФункции</name>
+        <id>43</id>
+        <title>
+          <key>ru</key>
+          <value>Отображать команду «Все функции»</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ОтображатьВсеФункции</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ОтображатьВсеФункцииExtendedTooltip</name>
+          <id>145</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ОтображатьВсеФункцииКонтекстноеМеню</name>
+          <id>44</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>НизкаяСкоростьСоединения</name>
+        <id>16</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.НизкаяСкоростьСоединения</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+        </handlers>
+        <extendedTooltip>
+          <name>НизкаяСкоростьСоединенияExtendedTooltip</name>
+          <id>146</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>НизкаяСкоростьСоединенияКонтекстноеМеню</name>
+          <id>17</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>ИмитироватьЗадержку</name>
+        <id>18</id>
+        <title>
+          <key>ru</key>
+          <value>Имитировать задержку при вызовах сервера</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.ИмитироватьЗадержку</segments>
+        </dataPath>
+        <titleLocation>Right</titleLocation>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПриИзмененииОбновитьСтрокуЗапускаИДоступность</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ИмитироватьЗадержкуExtendedTooltip</name>
+          <id>147</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ИмитироватьЗадержкуКонтекстноеМеню</name>
+          <id>19</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>CheckBoxField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаЗадержка</name>
+        <id>102</id>
+        <items xsi:type="form:Decoration">
+          <name>ОтступЗадержек</name>
+          <id>103</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ОтступЗадержекExtendedTooltip</name>
+            <id>149</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ОтступЗадержекКонтекстноеМеню</name>
+            <id>104</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <width>1</width>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <skipOnInput>false</skipOnInput>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>ГруппаЗадержки</name>
+          <id>101</id>
+          <items xsi:type="form:FormField">
+            <name>ЗадержкаВызова</name>
+            <id>20</id>
+            <title>
+              <key>ru</key>
+              <value>Задержка при вызове (с.)</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.ЗадержкаВызова</segments>
+            </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+            </handlers>
+            <extendedTooltip>
+              <name>ЗадержкаВызоваExtendedTooltip</name>
+              <id>151</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ЗадержкаВызоваКонтекстноеМеню</name>
+              <id>21</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <choiceButton>false</choiceButton>
+              <spinButton>true</spinButton>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>ЗадержкаПередачи</name>
+            <id>22</id>
+            <title>
+              <key>ru</key>
+              <value>Задержка при передаче данных (с./КБайт)</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.ЗадержкаПередачи</segments>
+            </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+            </handlers>
+            <extendedTooltip>
+              <name>ЗадержкаПередачиExtendedTooltip</name>
+              <id>152</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ЗадержкаПередачиКонтекстноеМеню</name>
+              <id>23</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <choiceButton>false</choiceButton>
+              <spinButton>true</spinButton>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <items xsi:type="form:FormField">
+            <name>ЗадержкаПолучения</name>
+            <id>24</id>
+            <title>
+              <key>ru</key>
+              <value>Задержка при получении данных (с./КБайт)</value>
+            </title>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <dataPath xsi:type="form:DataPath">
+              <segments>Объект.ЗадержкаПолучения</segments>
+            </dataPath>
+            <handlers>
+              <event>OnChange</event>
+              <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+            </handlers>
+            <extendedTooltip>
+              <name>ЗадержкаПолученияExtendedTooltip</name>
+              <id>153</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <type>Label</type>
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <extInfo xsi:type="form:LabelDecorationExtInfo">
+                <horizontalAlign>Left</horizontalAlign>
+              </extInfo>
+            </extendedTooltip>
+            <contextMenu>
+              <name>ЗадержкаПолученияКонтекстноеМеню</name>
+              <id>25</id>
+              <visible>true</visible>
+              <enabled>true</enabled>
+              <userVisible>
+                <common>true</common>
+              </userVisible>
+              <autoFill>true</autoFill>
+            </contextMenu>
+            <type>InputField</type>
+            <editMode>Enter</editMode>
+            <showInHeader>true</showInHeader>
+            <headerHorizontalAlign>Left</headerHorizontalAlign>
+            <showInFooter>true</showInFooter>
+            <extInfo xsi:type="form:InputFieldExtInfo">
+              <autoMaxWidth>true</autoMaxWidth>
+              <autoMaxHeight>true</autoMaxHeight>
+              <wrap>true</wrap>
+              <choiceButton>false</choiceButton>
+              <spinButton>true</spinButton>
+              <chooseType>true</chooseType>
+              <typeDomainEnabled>true</typeDomainEnabled>
+              <textEdit>true</textEdit>
+            </extInfo>
+          </items>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Группа задержки</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Группа задержки</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>ГруппаЗадержкиExtendedTooltip</name>
+            <id>150</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualGroup</type>
+          <extInfo xsi:type="form:UsualGroupExtInfo">
+            <group>Vertical</group>
+            <showLeftMargin>true</showLeftMargin>
+            <united>true</united>
+            <throughAlign>Auto</throughAlign>
+            <currentRowUse>Auto</currentRowUse>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа задержка</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа задержка</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ГруппаЗадержкаExtendedTooltip</name>
+          <id>148</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>Язык</name>
+        <id>31</id>
+        <title>
+          <key>ru</key>
+          <value>Язык интерфейса системы</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.Язык</segments>
+        </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+        </handlers>
+        <extendedTooltip>
+          <name>ЯзыкExtendedTooltip</name>
+          <id>154</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ЯзыкКонтекстноеМеню</name>
+          <id>32</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <wrap>true</wrap>
+          <choiceListButton>true</choiceListButton>
+          <choiceButton>false</choiceButton>
+          <clearButton>true</clearButton>
+          <listChoiceMode>true</listChoiceMode>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Болгарский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>bg</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Вьетнамский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>vi</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Грузинский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ka</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Казахский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>kk</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Латышский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>lv</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Литовский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>lt</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Немецкий</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>de</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Польский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>pl</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Румынский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ro</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Русский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ru</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Украинский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>uk</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>КодЛокализации</name>
+        <id>33</id>
+        <title>
+          <key>ru</key>
+          <value>Код локализации сеанса</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.КодЛокализации</segments>
+        </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+        </handlers>
+        <extendedTooltip>
+          <name>КодЛокализацииExtendedTooltip</name>
+          <id>155</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>КодЛокализацииКонтекстноеМеню</name>
+          <id>34</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <horizontalStretch>true</horizontalStretch>
+          <wrap>true</wrap>
+          <choiceListButton>true</choiceListButton>
+          <choiceButton>false</choiceButton>
+          <clearButton>true</clearButton>
+          <listChoiceMode>true</listChoiceMode>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Азербайджанский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>az</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Азербайджанский (Азербайджан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>az_AZ</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Азербайджанский (Кириллица)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>az_Cyrl</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Азербайджанский (Кириллица, Азербайджан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>az_Cyrl_AZ</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Азербайджанский (Латиница)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>az_Latn</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Азербайджанский (Латиница, Азербайджан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>az_Latn_AZ</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Албанский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sq</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Албанский (Албания)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sq_AL</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Амхарский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>am</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Амхарский (Эфиопия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>am_ET</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Австралия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_AU</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Американские Виргинские Острова)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_VI</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Бельгия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_BE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Ботсвана)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_BW</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Великобритания)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_GB</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Гонконг, (Область с Особым Административным Управлением, Китай))</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_HK</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Зимбабве)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_ZW</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Индия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_IN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Ирландия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_IE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Канада)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_CA</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Мальта)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_MT</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Новая Зеландия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_NZ</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Пакистан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_PK</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Сингапур)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_SG</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Соединенные Штаты Америки)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_US</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Филиппины)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_PH</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Английский (Южная Африка)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>en_ZA</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Алжир)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_DZ</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Бахрейн)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_BH</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Египет)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_EG</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Иордания)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_JO</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Ирак)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_IQ</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Йемен)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_YE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Катар)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_QA</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Кувейт)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_KW</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Ливан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_LB</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Ливия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_LY</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Марокко)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_MA</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Объединенные Арабские Эмираты)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_AE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Оман)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_OM</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Саудовская Аравия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_SA</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Сирия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_SY</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Судан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_SD</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Арабский (Тунис)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ar_TN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Армянский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>hy</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Армянский (Армения)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>hy_AM</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Армянский (Армения, REVISED)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>hy_AM_REVISED</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Ассамский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>as</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Ассамский (Индия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>as_IN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Африкаанс</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>af</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Африкаанс (Южная Африка)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>af_ZA</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Баскский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>eu</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Баскский (Испания)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>eu_ES</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Белорусский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>be</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Белорусский (Беларусь)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>be_BY</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Бенгальский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>bn</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Бенгальский (Индия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>bn_IN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Болгарский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>bg</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Болгарский (Болгария)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>bg_BG</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Валлийский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>cy</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Валлийский (Великобритания)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>cy_GB</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Венгерский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>hu</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Венгерский (Венгрия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>hu_HU</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Вьетнамский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>vi</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Вьетнамский (Вьетнам)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>vi_VN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Галисийский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>gl</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Галисийский (Испания)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>gl_ES</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Голландский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>nl</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Голландский (Бельгия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>nl_BE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Голландский (Нидерланды)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>nl_NL</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Гренландский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>kl</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Гренландский (Гренландия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>kl_GL</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Греческий</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>el</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Греческий (Греция)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>el_GR</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Грузинский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ka</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Грузинский (Грузия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ka_GE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Гуярати</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>gu</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Гуярати (Индия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>gu_IN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Датский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>da</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Датский (Дания)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>da_DK</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Иврит</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>he</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Иврит (Израиль)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>he_IL</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Индонезийский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>id</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Индонезийский (Индонезия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>id_ID</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Ирландский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ga</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Ирландский (Ирландия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ga_IE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Исландский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>is</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Исландский (Исландия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>is_IS</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Аргентина)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_AR</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Боливия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_BO</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Венесуэлла)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_VE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Гватемала)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_GT</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Гондурас)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_HN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Доминиканская Республика )</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_DO</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Испания)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_ES</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Колумбия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_CO</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Коста-Рика)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_CR</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Мексика)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_MX</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Никарагуа)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_NI</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Панама)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_PA</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Парагвай)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_PY</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Перу)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_PE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Пуэрто-Рико)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_PR</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Сальвадор)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_SV</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Соединенные Штаты Америки)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_US</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Уругвай)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_UY</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Чили)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_CL</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Испанский (Эквадор)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>es_EC</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Итальянский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>it</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Итальянский (Италия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>it_IT</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Итальянский (Швейцария)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>it_CH</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Казахский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>kk</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Казахский (Казахстан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>kk_KZ</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Каннада</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>kn</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Каннада (Индия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>kn_IN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Каталанский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ca</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Каталанский (Испания)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ca_ES</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Китайский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>zh</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Китайский (Hans)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>zh_Hans</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Китайский (Hans, Китай)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>zh_Hans_CN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Китайский (Hans, Сингапур)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>zh_Hans_SG</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Китайский (Hant)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>zh_Hant</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Китайский (Hant, Гонконг (Область с Особым Административным Управлением, Китай))</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>zh_Hant_HK</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Китайский (Hant, Макао (Область с Особым Административным Управлением, Китай))</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>zh_Hant_MO</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Китайский (Hant, Тайвань)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>zh_Hant_TW</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Китайский (Гонконг (Область с Особым Административным Управлением, Китай))</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>zh_HK</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Китайский (Китай)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>zh_CN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Китайский (Макао (Область с Особым Административным Управлением, Китай))</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>zh_MO</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Китайский (Сингапур)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>zh_SG</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Китайский (Тайвань)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>zh_TW</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Конкани</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>kok</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Конкани (Индия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>kok_IN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Корейский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ko</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Корейский (Южная Корея)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ko_KR</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Латышский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>lv</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Латышский (Латвия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>lv_LV</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Литовский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>lt</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Литовский (Литва)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>lt_LT</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Македонский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>mk</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Македонский (Македония)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>mk_MK</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Малайский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ms</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Малайский (Бруней)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ms_BN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Малайский (Малайзия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ms_MY</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Малаялам</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ml</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Малаялам (Индия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ml_IN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Мальтийский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>mt</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Мальтийский (Мальта)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>mt_MT</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Маратийский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>mr</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Маратийский (Индия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>mr_IN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Немецкий</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>de</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Немецкий (Австрия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>de_AT</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Немецкий (Бельгия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>de_BE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Немецкий (Германия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>de_DE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Немецкий (Люксембург)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>de_LU</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Немецкий (Швейцария)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>de_CH</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Норвежский букмол</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>nb</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Норвежский букмол (Норвегия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>nb_NO</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Норвежский нюнорск</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>nn</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Норвежский нюнорск (Норвегия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>nn_NO</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Ория</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>or</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Ория (Индия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>or_IN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Оромо (Афан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>om</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Оромо (Афан) (Кения)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>om_KE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Оромо (Афан) (Эфиопия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>om_ET</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Панджабский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>pa</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Панджабский (Индия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>pa_IN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Пашто (Пушто)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ps</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Пашто (Пушто) (Афганистан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ps_AF</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Персидский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>fa</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Персидский (Афганистан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>fa_AF</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Персидский (Иран)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>fa_IR</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Польский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>pl</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Польский (Польша)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>pl_PL</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Португальский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>pt</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Португальский (Бразилия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>pt_BR</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Португальский (Португалия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>pt_PT</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Румынский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ro</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Румынский (Румыния)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ro_RO</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Русский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ru</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Русский (Россия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ru_RU</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Русский (Украина)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ru_UA</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сербский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sr</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сербский (Кириллица)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sr_Cyrl</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сербский (Кириллица, Сербия и Черногория)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sr_Cyrl_CS</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сербский (Кириллица, Югославия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sr_Cyrl_YU</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сербский (Латиница)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sr_Latn</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сербский (Латиница, Сербия и Черногория)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sr_Latn_CS</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сербский (Латиница, Югославия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sr_Latn_YU</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сербский (Сербия и Черногория)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sr_CS</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сербский (Югославия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sr_YU</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Словацкий</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sk</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Словацкий (Словакия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sk_SK</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Словенский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sl</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Словенский (Словения)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sl_SI</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сомали</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>so</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сомали (Джибути)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>so_DJ</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сомали (Кения)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>so_KE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сомали (Сомали)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>so_SO</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Сомали (Эфиопия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>so_ET</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Суахили</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sw</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Суахили (Суахили)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sw_KE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Суахили (Танзания)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sw_TZ</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Тайский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>th</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Тайский (Таиланд)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>th_TH</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Тамильский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ta</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Тамильский (Индия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ta_IN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Телугу</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>te</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Телугу (Индия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>te_IN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Тигриниа</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ti</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Тигриниа (Эритрея)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ti_ER</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Тигриниа (Эфиопия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ti_ET</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Турецкий</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>tr</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Турецкий (Турция)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>tr_TR</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Узбекский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>uz</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Узбекский (Кириллица)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>uz_Cyrl</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Узбекский (Кириллица, Узбекистан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>uz_Cyrl_UZ</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Узбекский (Латиница)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>uz_Latn</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Узбекский (Латиница, Узбекистан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>uz_Latn_UZ</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Узбекский (Узбекистан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>uz_UZ</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Украинский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>uk</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Украинский (Украина)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>uk_UA</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Урду</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ur</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Урду (Пакистан)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ur_PK</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Фарерский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>fo</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Фарерский (Фарерские острова)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>fo_FO</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Финский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>fi</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Финский (Финляндия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>fi_FI</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Французский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>fr</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Французский (Бельгия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>fr_BE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Французский (Канада)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>fr_CA</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Французский (Люксембург)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>fr_LU</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Французский (Франция)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>fr_FR</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Французский (Швейцария)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>fr_CH</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Хинди</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>hi</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Хинди (Индия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>hi_IN</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Хорватский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>hr</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Хорватский (Хорватия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>hr_HR</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Чешский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>cs</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Чешский (Чешская Республика)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>cs_CZ</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Шведский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sv</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Шведский (Финляндия)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sv_FI</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Шведский (Швеция)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>sv_SE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Эстонский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>et</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Эстонский (Эстония)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>et_EE</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Японский</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ja</value>
+            </value>
+          </choiceList>
+          <choiceList>
+            <presentation>
+              <key>ru</key>
+              <value>Японский (Япония)</value>
+            </presentation>
+            <value xsi:type="core:StringValue">
+              <value>ja_JP</value>
+            </value>
+          </choiceList>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаФайлСообщений</name>
+        <id>28</id>
+        <items xsi:type="form:FormField">
+          <name>ФайлСообщений</name>
+          <id>26</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.ФайлСообщений</segments>
+          </dataPath>
+          <titleLocation>None</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>ПриИзмененииОбновитьСтрокуЗапускаИДоступность</name>
+          </handlers>
+          <extendedTooltip>
+            <name>ФайлСообщенийExtendedTooltip</name>
+            <id>157</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ФайлСообщенийКонтекстноеМеню</name>
+            <id>27</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <handlers>
+              <event>StartChoice</event>
+              <name>ФайлСообщенийНачалоВыбора</name>
+            </handlers>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>НеОчищатьСлужебныеСообщения</name>
+          <id>29</id>
+          <title>
+            <key>ru</key>
+            <value>Не очищать файл перед запуском</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.НеОчищатьСлужебныеСообщения</segments>
+          </dataPath>
+          <titleLocation>Right</titleLocation>
+          <handlers>
+            <event>OnChange</event>
+            <name>ПриИзмененииОбновитьСтрокуЗапуска</name>
+          </handlers>
+          <extendedTooltip>
+            <name>НеОчищатьСлужебныеСообщенияExtendedTooltip</name>
+            <id>158</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НеОчищатьСлужебныеСообщенияКонтекстноеМеню</name>
+            <id>30</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Файл служебных сообщений</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Группа файл сообщений</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>ГруппаФайлСообщенийExtendedTooltip</name>
+          <id>156</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>Vertical</group>
+          <representation>StrongSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <showTitle>true</showTitle>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <items xsi:type="form:FormField">
+        <name>СтрокаЗапуска</name>
+        <id>99</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <dataPath xsi:type="form:DataPath">
+          <segments>Объект.СтрокаЗапуска</segments>
+        </dataPath>
+        <titleLocation>Left</titleLocation>
+        <extendedTooltip>
+          <name>СтрокаЗапускаExtendedTooltip</name>
+          <id>159</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>СтрокаЗапускаКонтекстноеМеню</name>
+          <id>100</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>InputField</type>
+        <readOnly>true</readOnly>
+        <editMode>Enter</editMode>
+        <showInHeader>true</showInHeader>
+        <headerHorizontalAlign>Left</headerHorizontalAlign>
+        <showInFooter>true</showInFooter>
+        <extInfo xsi:type="form:InputFieldExtInfo">
+          <autoMaxWidth>true</autoMaxWidth>
+          <height>3</height>
+          <autoMaxHeight>true</autoMaxHeight>
+          <verticalStretch>false</verticalStretch>
+          <wrap>true</wrap>
+          <multiLine>true</multiLine>
+          <chooseType>true</chooseType>
+          <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Дополнительные</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Закладка дополнительные</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>ЗакладкаДополнительныеExtendedTooltip</name>
+        <id>137</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <title>
+      <key>ru</key>
+      <value>Категории</value>
+    </title>
+    <toolTip>
+      <key>ru</key>
+      <value>Категории</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>КатегорииExtendedTooltip</name>
+      <id>107</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <type>Pages</type>
+    <extInfo xsi:type="form:PagesGroupExtInfo">
+      <pagesRepresentation>TabsOnTop</pagesRepresentation>
+      <currentRowUse>Auto</currentRowUse>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>OnOpen</event>
+    <name>ПриОткрытии</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <handlers>
+    <event>FillCheckProcessingAtServer</event>
+    <name>ОбработкаПроверкиЗаполненияНаСервере</name>
+  </handlers>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <verticalScroll>UseIfNecessary</verticalScroll>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>Объект</name>
+    <title>
+      <key>ru</key>
+      <value>Объект</value>
+    </title>
+    <id>32</id>
+    <valueType>
+      <types>CatalogObject.ТЦКлиенты</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <main>true</main>
+    <savedData>true</savedData>
+  </attributes>
+  <formCommands>
+    <name>ИзменитьДопПараметры</name>
+    <title>
+      <key>ru</key>
+      <value>Изменить доп. параметры</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Изменить дополнительные параметры командной строки клиента 1С:Предприятия</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Change</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ИзменитьДопПараметры</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <parameters>
+    <name>ЛокальныйКомпьютер</name>
+    <valueType>
+      <types>Boolean</types>
+    </valueType>
+    <keyParameter>true</keyParameter>
+  </parameters>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+  <extInfo xsi:type="form:CatalogFormExtInfo"/>
+</form:Form>

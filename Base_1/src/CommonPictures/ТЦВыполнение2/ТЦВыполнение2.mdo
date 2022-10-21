@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f70c8c3-e0e5-431c-a53c-cff56e418614">
+  <name>ТЦВыполнение2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполнение</value>
+  </synonym>
+</mdclass:CommonPicture>

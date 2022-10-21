@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="81fc268e-9b2a-4ebf-8dde-fbba60639180">
+  <producedTypes>
+    <objectType typeId="dc31ef42-063b-4d00-a951-d1e548129815" valueTypeId="60706bc3-1b93-48dd-b12e-863393ffe555"/>
+    <refType typeId="c401d0e8-94cc-4e8d-b566-fce06e8c3cff" valueTypeId="57c6778d-8ded-4e6a-b5dc-b69b73679415"/>
+    <selectionType typeId="1f439145-285d-4d1d-a7b8-90ee6011172a" valueTypeId="6a8a8ff8-be18-4432-9c17-ebedade15448"/>
+    <listType typeId="71ed3a83-ade3-4baf-912c-a418093a0d3d" valueTypeId="b7b0daff-caf4-4f7b-aefe-93ffff5e5e29"/>
+    <managerType typeId="6b8da006-b243-4e22-a296-fd839fa688c1" valueTypeId="8023e043-d115-49d0-acea-9815e9148492"/>
+  </producedTypes>
+  <name>ЗапускТеста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запуск теста</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЗапускТеста.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultChoiceForm>Document.ЗапускТеста.Form.ФормаВыбора</defaultChoiceForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="41e640de-a93b-4e1c-9136-fc8ad2dd2976">
+    <name>Отчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="92ecfc8d-aed2-4d9f-a6be-f2e4de9488ed">
+    <name>ВремяВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время выполнения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5e1911f9-2abe-4ec7-82e2-a44ad2c9ef94">
+    <name>Версия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b9311093-15f6-48cd-87c3-f3baaad927ea">
+    <name>УсловияТестирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условия тестирования</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="963c8a69-91c9-4fd1-a43a-4ecd98fc9a42">
+    <name>РезультатВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат выполнения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="c6deb22b-55f7-474f-acbd-72abc6cbafdd">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="d5b205ce-839b-48db-bedf-dbfab9d61306">
+    <producedTypes>
+      <objectType typeId="d6e080a9-3201-4150-864a-ef0ca06d3549" valueTypeId="ba58cb80-23a4-48d8-8f5e-537639d3be4c"/>
+      <rowType typeId="a9413814-c3b3-4f9a-8f74-50a82675e5a4" valueTypeId="6848aada-c537-4530-95ea-f0965fdc5c13"/>
+    </producedTypes>
+    <name>РезультатыЗапуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результаты запуска</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="2c7c8eb7-e422-4643-ad4e-97b2523ff700">
+      <name>Результат</name>
+      <synonym>
+        <key>ru</key>
+        <value>Результат</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ТЦТест</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bdb7a623-4675-4222-9450-dd719b964ddd">
+      <name>КоличествоПользователей</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество пользователей</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="67acaf45-f037-42b7-9bd6-34b02c4e97b3">
+      <name>ADPEX</name>
+      <synonym>
+        <key>ru</key>
+        <value>ADPEX</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
